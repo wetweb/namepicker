@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Name Picker: find the perfect baby name, together</title>
+    <!-- Link previews for deep links such as partner invites (/invite/...),
+         which GitHub Pages serves from this file. Same as index.html. -->
+    <meta name="description" content="Swipe through 4,000+ baby names, see what they mean, and find the names you and your partner both love. Free." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Name Picker" />
+    <meta property="og:title" content="Name Picker: find the perfect baby name, together" />
+    <meta property="og:description" content="Swipe through 4,000+ baby names, see what they mean, and find the names you and your partner both love. Free." />
+    <meta property="og:image" content="https://namepicker.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://namepicker.io/og-image.png" />
+    <!--
+      GitHub Pages SPA fallback (https://github.com/rafgraph/spa-github-pages).
+      Pages serves this file for any unknown path. It rewrites e.g.
+        /favourites?x=1  ->  /?/favourites&x=1
+      and the script in index.html restores the original URL before React Router runs.
+    -->
+    <script>
+      var pathSegmentsToKeep = 0;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
