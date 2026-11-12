@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /favourites
+Disallow: /invite/
+Disallow: /deleteUser
+Disallow: /reset-password
+
+Sitemap: https://namepicker.io/sitemap.xml
